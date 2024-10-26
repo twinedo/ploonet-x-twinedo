@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row gap-[55px] items-center">
           <div className="text-base font-bold text-white">로그인</div>
-          <div className="flex flex-row items-center">
+          <div className="flex flex-row items-center gap-2">
             <Image src={IcWorld} width={20} height={20} alt="world" />
             <FaSortDown size={18} color="white" />
           </div>
