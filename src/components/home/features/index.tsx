@@ -26,13 +26,14 @@ const HomeFeatures = () => {
   ], [])
 
   return (
-    <div className="flex flex-col w-full bg-black px-[538px] pt-[157px]">
+    <div className="flex flex-col w-full bg-black md:px-[538px] md:pt-[157px] pt-[59px]">
       <div className="flex flex-col flex-1 items-center">
-        <div className="w-[110px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] font-bold text-2xl mb-[15px]">
+        
+        <div className="hidden md:flex w-[110px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] font-bold text-2xl mb-[15px]">
           영상 제작소
         </div>
-        <div className="text-3xl md:text-4xl lg:text-5xl text-center mb-12">
-          당장 내일{" "}
+        <div className="text-2xl md:text-4xl lg:text-5xl text-center mb-12 px-[41px]">
+          당장 내일{" "}<br />
           <span className="text-white font-bold">
             &apos;고품질 맞춤 영상&apos;
           </span>
