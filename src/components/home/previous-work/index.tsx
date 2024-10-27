@@ -94,9 +94,9 @@ const HomePreviousWork = () => {
   );
 
   return (
-    <div className="flex flex-col w-full items-center gap-[60px]">
+    <div className="flex flex-col w-full items-center gap-9 md:gap-[60px]">
       <TitleSection text="PREVIOUS WORKS" />
-      <div className="grid grid-cols-4 w-full">
+      <div className="grid grid-cols-2 md:grid-cols-4 w-full">
         {dataWorks.map((item) => (
           <div key={item.id} className="relative">
             <Image
