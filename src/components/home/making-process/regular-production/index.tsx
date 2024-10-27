@@ -41,7 +41,7 @@ const RegularProduction = () => {
   return (
     <div className="flex flex-col max-w-[780px] max-h-[816px] rounded-[20px] md:border md:border-[#FFFFFF26] md:bg-[#141414] md:px-[93px] md:py-[64px] jutify-center items-center">
       <div className="text-[22px] md:text-[44px] font-bold text-[#D9D9D9]">일반 제작</div>
-      <div className="text-[16px] font-bold md:font-normal md:text-2xl text-white mb-[17px] md:mb-[18px]">
+      <div className="text-[16px] font-bold md:font-normal md:text-2xl text-[#DDDDDD] mb-[17px] md:mb-[18px]">
         제작 시작 후 5영업일 이내
       </div>
       <div className="flex flex-col gap-6">

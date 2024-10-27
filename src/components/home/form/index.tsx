@@ -6,23 +6,29 @@ import { IoMdCheckmarkCircle } from "react-icons/io";
 const HomeForm = () => {
   return (
     <div className="flex flex-col w-full bg-black mx-auto pt-[103px] md:pt-[300px]">
-      <div className="flex flex-col flex-1 items-center px-5 md:px-0">
+      <div className="flex flex-col flex-1 items-center md:px-0">
         <div className="w-[102px] md:w-[136px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF4E83] to-[#FFBB54] font-bold text-lg md:text-2xl mb-[15px]">
           영상 제작 문의
         </div>
-        <div className="w-[217px] md:[690px] text-2xl md:text-4xl lg:text-5xl text-center mb-12">
-          <span className="text-white font-bold">영상 제작이 필요하다면,</span>
+        <div className="md:w-[690px] text-2xl md:text-5xl text-center mb-12">
+          <span className="text-white font-bold">영상 제작이 필요하다면,</span><br className="md:hidden" />
           지금 문의 주세요.
         </div>
-        <div className="font-bold text-[16px] md:text-2xl text-white opacity-60 leading-6 md:leading-8 text-center mt-[16px] md:mt-[38px]">
+        <div className="hidden md:flex font-bold text-[16px]  md:text-2xl w-[335px] text-white opacity-60 leading-6 md:leading-8 text-center mt-[16px] md:mt-[38px]">
           여러분이 필요한 영상을 빠르게 제작하기 위해 플루닛 영상제작소가
           <br /> 즉시 연락 드리겠습니다.
         </div>
-        <div className="md:hidden flex text-[16px] leading-[25px] font-bold mt-[30px] text-[#666666]">
+        <div className="flex md:hidden font-bold text-[16px] md:text-2xl w-[335px] justify-center text-white opacity-60 leading-6 md:leading-8 text-center mt-[16px] md:mt-[38px]">
+          여러분이 필요한 영상을 빠르게 제작하기 위해<br /> 플루닛 영상제작소가
+          즉시 연락 드리겠습니다.
+        </div>
+        <div className="md:hidden flex text-[16px] leading-[25px] font-bold mt-[25px] md:mt-[30px] text-[#666666]">
           E-MAIL
         </div>
-        <div className="text-[#666666] mb-[58px]">henry.lim@saltlux.com</div>
-        <div className="flex w-full max-w-[901px] flex-col gap-5 items-center">
+        <div className="text-[#666666] mb-[25px] md:mb-[58px]  md:mt-[30px]">
+          henry.lim@saltlux.com
+        </div>
+        <div className="flex w-full max-w-[901px] flex-col gap-5 px-5 items-center">
           <div className="flex flex-row items-center justify-between border border-[#FFFFFF26] max-w-[901px] h-[66px] w-full px-[40px] bg-[#141414] rounded-[10px] ">
             <input
               className="outline-none flex flex-1 h-full w-full bg-transparent text-xl font-bold leading-6 text-[20px]"
@@ -53,9 +59,7 @@ const HomeForm = () => {
             <input
               className="outline-none flex flex-1 h-full w-full bg-transparent text-xl font-bold leading-6 text-[20px]"
               multiple
-              placeholder={`의뢰하실 영상내용 아래 예시를 참고하셔서 이 중 편하신 내용을 기재해주세요,${(
-                <br />
-              )} 고객님의 비즈니스 유형 : 관공서/일반기업/소상공인 등
+              placeholder={`의뢰하실 영상내용 아래 예시를 참고하셔서 이 중 편하신 내용을 기재해주세요, 고객님의 비즈니스 유형 : 관공서/일반기업/소상공인 등
 영상 장르 : 홍보,프로모션/IR/프레젠테이션 등
 내용 : 제작하시고자 하는 영상의 내용을 간단히 기재해주세요.`}
             />
