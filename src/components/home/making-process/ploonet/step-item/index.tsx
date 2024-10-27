@@ -1,5 +1,5 @@
 import React from "react";
-import { StepItemProps } from "./types";
+import type { StepItemProps } from "./types";
 
 const StepItem = (props: StepItemProps) => {
   const { index = 0, title = "", description = "", icon, data } = props;
