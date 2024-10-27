@@ -35,8 +35,8 @@ const Ploonet = () => {
         <div className="font-bold text-[#DDDDDD] md:text-[#FFFFFF] text-center text-[16px] md:text-2xl mb-[50px]">
           제작 시작 후 12~48시간 이내
         </div>
-        <div className="flex flex-col gap-10 bg-gradient-to-br from-[#FF4E83] to-[#FFBB54] p-[3px] rounded-[20px] relative overflow-hidden">
-          <div className="md:hidden flex bg-[#141414] gap-[32px] p-[28px] flex-col rounded-[20px] relative overflow-hidden">
+        <div className="flex flex-col gap-10 bg-gradient-to-br from-[#FF4E83] to-[#FFBB54] md:bg-gradient-to-b md:from-[#141414] md:to-[#141414] p-[3px] rounded-[20px] relative overflow-hidden">
+          <div className="flex bg-[#141414] gap-[32px] p-[28px] flex-col rounded-[20px] relative overflow-hidden">
 
             {dataPloonet.map((item, index) => (
               <div key={item.id} className="flex flex-1">
